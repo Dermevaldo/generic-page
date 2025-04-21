@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Empresa Genérica</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Permitir que elementos com z-index menor (ex: vídeo) não bloqueiem os cliques */
+        video {
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body class="bg-gray-100 text-gray-800">
     <!-- Header -->
-    <header class="bg-white shadow fixed w-full z-10">
+    <header class="relative bg-white shadow fixed w-full z-10">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-xl font-bold">Nome da Empresa</h1>
             <nav class="space-x-4">
@@ -28,7 +34,7 @@
             Seu navegador não suporta vídeos em HTML5.
         </video>
 
-        <div class="relative z-10 flex items-center justify-center h-full bg-black/50">
+        <div class="relative z-10 flex items-center justify-center h-full bg-black/50 pt-20">
             <div class="text-center text-white p-8 rounded">
                 <h2 class="text-4xl font-bold mb-4">Soluções Sob Medida</h2>
                 <p class="text-lg">Damos vida às suas ideias com criatividade e eficiência.</p>
@@ -37,35 +43,73 @@
     </section>
 
     <!-- Sobre -->
-    <section id="sobre" class="py-20 px-4 max-w-5xl mx-auto">
+    <section id="sobre" class="scroll-mt-20 py-20 px-4 max-w-5xl mx-auto">
         <h3 class="text-2xl font-bold mb-6 text-center">Quem Somos</h3>
-        <p class="text-center text-lg">Oferecemos serviços personalizados com foco em qualidade, inovação e atendimento
+        <p class="text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod
+            consectetur est efficitur sodales. Integer ut
+            eleifend odio, vitae tempor nibh. Donec consectetur, nunc eu eleifend sodales, neque nisi sagittis arcu,
+            pulvinar
+            fringilla elit justo sit amet justo. Pellentesque lacinia, nunc nec laoreet semper, arcu nisi lobortis
+            libero, quis
+            lacinia sapien diam non eros. In vehicula tincidunt leo, non egestas ante vehicula in. Curabitur suscipit
+            diam non quam
+            convallis efficitur nec id orci. Etiam ut nunc mauris. Etiam ligula sapien, luctus et ex et, dictum placerat
+            quam. In
+            rhoncus aliquam accumsan. Curabitur congue ornare odio vitae viverra. Maecenas a tortor eu elit gravida
+            bibendum.
+            Suspendisse bibendum efficitur justo a sollicitudin. Suspendisse potenti. Praesent in ipsum vitae risus
+            eleifend
+            tristique id sed erat.
+
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi accumsan augue
+            quis metus
+            vulputate, a malesuada turpis consectetur. Quisque volutpat, erat a gravida sagittis, elit quam efficitur
+            nibh, id
+            lobortis sem nulla eget eros. Nulla imperdiet sollicitudin ante. Morbi non malesuada dui, nec suscipit orci.
+            Nulla
+            maximus, mauris vitae efficitur varius, lacus dui mollis libero, sed mollis elit lacus non urna. Mauris
+            aliquet faucibus
+            maximus. Curabitur pellentesque enim tortor, porttitor tincidunt felis tristique sit amet. Morbi luctus
+            dolor ac ornare
+            malesuada. Nam egestas eu nulla ut egestas. Sed nulla lorem, tincidunt vitae aliquet eget, interdum a felis.
             humanizado.</p>
     </section>
 
     <!-- Produtos / Serviços -->
-    <section id="produtos" class="py-20 bg-white px-4">
+    <section id="produtos" class="scroll-mt-20 py-20 bg-white px-4">
         <div class="max-w-5xl mx-auto">
             <h3 class="text-2xl font-bold mb-6 text-center">O Que Oferecemos</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-gray-100 p-6 rounded shadow">
                     <h4 class="font-semibold mb-2">Serviço 1</h4>
-                    <p>Detalhes sobre um dos nossos serviços personalizados.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod consectetur est efficitur
+                        sodales. Integer ut
+                        eleifend odio, vitae tempor nibh. Donec consectetur, nunc eu eleifend sodales, neque nisi
+                        sagittis arcu, pulvinar
+                        fringilla elit justo sit amet justo.</p>
                 </div>
                 <div class="bg-gray-100 p-6 rounded shadow">
                     <h4 class="font-semibold mb-2">Serviço 2</h4>
-                    <p>Detalhes sobre outro serviço que oferecemos.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod consectetur est efficitur
+                        sodales. Integer ut
+                        eleifend odio, vitae tempor nibh. Donec consectetur, nunc eu eleifend sodales, neque nisi
+                        sagittis arcu, pulvinar
+                        fringilla elit justo sit amet justo.</p>
                 </div>
                 <div class="bg-gray-100 p-6 rounded shadow">
                     <h4 class="font-semibold mb-2">Serviço 3</h4>
-                    <p>Informações sobre um terceiro tipo de serviço.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod consectetur est efficitur
+                        sodales. Integer ut
+                        eleifend odio, vitae tempor nibh. Donec consectetur, nunc eu eleifend sodales, neque nisi
+                        sagittis arcu, pulvinar
+                        fringilla elit justo sit amet justo.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="py-20 px-4 bg-gray-100">
+    <section id="contato" class="scroll-mt-20 py-20 px-4 bg-gray-100">
         <div class="max-w-3xl mx-auto">
             <h3 class="text-2xl font-bold mb-6 text-center">Entre em Contato</h3>
             <form action="https://formspree.io/f/SEU_CODIGO" method="POST"
@@ -89,7 +133,13 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                const target = document.querySelector(this.getAttribute('href'));
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elementPosition - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
                     behavior: 'smooth'
                 });
             });
