@@ -16,34 +16,64 @@
 
 <body class="bg-gray-100 text-gray-800">
     <!-- Header -->
-    <header class="relative bg-white shadow fixed w-full z-10">
-        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold">Nome da Empresa</h1>
+    <header class="bg-opacity-50 shadow fixed w-full z-10 backdrop-filter backdrop-blur-md">
+        <div class="max-w-7xl z-10 relative mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] text-xl font-bold text-white">Nome da Empresa</h1>
             <nav class="space-x-4">
-                <a href="#sobre" class="hover:text-blue-500">Sobre</a>
-                <a href="#produtos" class="hover:text-blue-500">Produtos</a>
-                <a href="#contato" class="hover:text-blue-500">Contato</a>
+                <a href="#sobre"
+                    class="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] z-10 hover:text-blue-500  text-white">Sobre</a>
+                <a href="#produtos"
+                    class="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] z-10 hover:text-blue-500 text-white">Produtos</a>
+                <a href="#contato"
+                    class="drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] z-10 hover:text-blue-500 text-white">Contato</a>
             </nav>
+            <div class="flex items-center space-x-4" id="social">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                    class="text-white hover:text-blue-500">
+                    <img class="h-6 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+                        src="..\img\IG_brand_asset_pack_2023\01 Static Glyph\02 White Glyph\Instagram_Glyph_White.png"
+                        alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                    class="text-white hover:text-blue-500 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                    <img class="h-6"
+                        src="..\img\Facebook Brand Asset Pack\Logo\Secondary Logo\Facebook_Logo_Secondary.png"
+                        alt="Facebook">
+                </a>
+                <!-- <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                    class="text-white hover:text-blue-500">
+                    <img class="h-4"
+                        src="..\img\brand-full-color-icon\youtube_full_color_icon\digital_and_tv\yt_icon_rgb.png"
+                        alt="Youtube">
+                </a> -->
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                    class="text-white hover:text-blue-500 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+                    YouTube
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- Hero com vídeo de fundo -->
-    <section class="relative h-screen w-full overflow-hidden">
+    <section class="h-screen w-full overflow-hidden">
         <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
             <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
             Seu navegador não suporta vídeos em HTML5.
         </video>
 
-        <div class="relative z-10 flex items-center justify-center h-full bg-black/50 pt-20">
+        <div class="relative z-5 flex items-center justify-center h-full bg-black/50 pt-20">
             <div class="text-center text-white p-8 rounded">
                 <h2 class="text-4xl font-bold mb-4">Soluções Sob Medida</h2>
                 <p class="text-lg">Damos vida às suas ideias com criatividade e eficiência.</p>
+                <a href="#contato"
+                    class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 mt-4 inline-block">Entre em
+                    Contato</a>
             </div>
         </div>
     </section>
 
     <!-- Sobre -->
-    <section id="sobre" class="scroll-mt-20 py-20 px-4 max-w-5xl mx-auto">
+    <section id="sobre" class="scroll-mt-20 py-20 px-4 max-w-5xl mx-auto h-screen">
         <h3 class="text-2xl font-bold mb-6 text-center">Quem Somos</h3>
         <p class="text-center text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod
             consectetur est efficitur sodales. Integer ut
@@ -76,7 +106,7 @@
     </section>
 
     <!-- Produtos / Serviços -->
-    <section id="produtos" class="scroll-mt-20 py-20 bg-white px-4">
+    <section id="produtos" class="scroll-mt-20 py-20 bg-white px-4 h-screen">
         <div class="max-w-5xl mx-auto">
             <h3 class="text-2xl font-bold mb-6 text-center">O Que Oferecemos</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -109,7 +139,7 @@
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="scroll-mt-20 py-20 px-4 bg-gray-100">
+    <section id="contato" class="scroll-mt-20 py-20 px-4 bg-gray-100 h-screen">
         <div class="max-w-3xl mx-auto">
             <h3 class="text-2xl font-bold mb-6 text-center">Entre em Contato</h3>
             <form action="https://formspree.io/f/SEU_CODIGO" method="POST"
